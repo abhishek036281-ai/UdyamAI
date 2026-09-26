@@ -1,4 +1,4 @@
-﻿# Entrepreneur Scheme Copilot
+﻿# UdyamAI
 
 A comprehensive platform designed to match Indian entrepreneurs and MSMEs with the most relevant government schemes (loans, subsidies, training) using a rule-based matching engine and AI-driven analysis.
 

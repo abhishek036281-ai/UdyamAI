@@ -3,16 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scheme Details - Entrepreneur Scheme Copilot</title>
+    <title>Scheme Details - UdyamAI</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/js/app.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { 50: '#f0f4f8', 100: '#d9e2ec', 800: '#102a43', 900: '#0a1a2e' },
+                        primary: { 50: '#eff6ff', 100: '#dbeafe', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8' },
+                    },
+                    fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<body class="bg-gray-50 min-h-screen font-sans text-gray-800">
+<body class="bg-mesh text-slate-800 min-h-screen font-sans text-gray-800">
     <nav class="bg-white shadow-sm border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <a href="/" class="flex items-center space-x-2">
-                    <span class="text-blue-600 text-2xl font-bold">Copilot</span>
+                    <span class="text-blue-600 text-2xl font-bold">UdyamAI</span>
                     <span class="text-gray-700 font-medium">for Entrepreneurs</span>
                 </a>
                 <div id="nav-auth"></div>
@@ -98,7 +114,7 @@
                 <!-- Eligibility Criteria -->
                 <div class="space-y-3">
                     <h3 class="text-lg font-bold text-gray-900">Who Should Apply & Eligibility</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700 bg-gray-50 p-4 rounded-xl border border-gray-100">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700 bg-mesh text-slate-800 p-4 rounded-xl border border-gray-100">
                         <div>• <strong>Age Range:</strong> ${scheme.minimum_age || 18} to ${scheme.maximum_age || 65} Years</div>
                         <div>• <strong>Gender Focus:</strong> ${scheme.gender_requirements}</div>
                         <div>• <strong>Social Category:</strong> ${(scheme.social_category_requirements || ['All']).join(', ')}</div>
@@ -117,7 +133,7 @@
                 <!-- Application Process -->
                 <div class="space-y-4">
                     <h3 class="text-lg font-bold text-gray-900">Step-by-Step Application Process</h3>
-                    <div class="space-y-4 bg-gray-50 p-6 rounded-xl border border-gray-100">
+                    <div class="space-y-4 bg-mesh text-slate-800 p-6 rounded-xl border border-gray-100">
                         ${processList}
                     </div>
                 </div>

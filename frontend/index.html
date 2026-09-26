@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrepreneur Scheme Copilot - AI Scheme Matching</title>
+    <title>UdyamAI - AI Scheme Matching</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/js/app.js"></script>
     <style>
@@ -26,8 +26,24 @@
             background: radial-gradient(circle at 50% 20%, rgba(59, 130, 246, 0.15) 0%, rgba(99, 102, 241, 0.05) 50%, transparent 100%);
         }
     </style>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { 50: '#f0f4f8', 100: '#d9e2ec', 800: '#102a43', 900: '#0a1a2e' },
+                        primary: { 50: '#eff6ff', 100: '#dbeafe', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8' },
+                    },
+                    fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-blue-500 selection:text-white">
+<body class="bg-mesh text-slate-800 text-slate-800 font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-blue-500 selection:text-white">
 
     <!-- Glowing backdrop effect -->
     <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[600px] pointer-events-none hero-gradient z-0"></div>
@@ -41,8 +57,8 @@
                         ⚡
                     </div>
                     <div class="flex flex-col">
-                        <span class="text-slate-900 text-lg font-extrabold tracking-tight leading-none">Entrepreneur Scheme</span>
-                        <span class="text-blue-600 text-xs font-bold uppercase tracking-wider mt-0.5">Copilot AI</span>
+                        <span class="text-slate-900 text-lg font-extrabold tracking-tight leading-none">UdyamAI</span>
+                        <span class="text-blue-600 text-xs font-bold uppercase tracking-wider mt-0.5">AI Platform</span>
                     </div>
                 </a>
 
@@ -60,7 +76,7 @@
     <main class="relative z-10">
         <!-- Hero Section -->
         <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-20 md:pt-24 md:pb-28">
-            <div class="text-center space-y-8 max-w-4xl mx-auto">
+            <div class="text-center space-y-8 max-w-4xl mx-auto animate-fade-in-up">
                 
                 <!-- Hero Heading -->
                 <h1 class="text-4xl sm:text-6xl md:text-7xl font-black text-slate-900 tracking-tight leading-[1.1]">
@@ -81,7 +97,7 @@
                         <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                     </button>
                     
-                    <a href="#how-it-works" class="w-full sm:w-auto bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 hover:text-slate-900 font-bold px-8 py-4 rounded-2xl text-lg transition-all shadow-sm flex items-center justify-center">
+                    <a href="#how-it-works" class="w-full sm:w-auto bg-white border border-slate-200 text-slate-700 hover:bg-mesh text-slate-800 hover:text-slate-900 font-bold px-8 py-4 rounded-2xl text-lg transition-all shadow-sm flex items-center justify-center">
                         How It Works
                     </a>
                 </div>
@@ -109,7 +125,7 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
                     <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600">Transparent AI Pipeline</h2>
-                    <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">How Scheme Copilot Works</p>
+                    <p class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">How UdyamAI Works</p>
                     <p class="text-slate-500 text-base">From natural language business description to personalized scheme recommendations in 4 transparent steps.</p>
                 </div>
 
@@ -155,7 +171,7 @@
         </section>
 
         <!-- Supported Verified Schemes Preview -->
-        <section id="schemes" class="py-20 bg-slate-50">
+        <section id="schemes" class="py-20 bg-mesh text-slate-800">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
                     <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600">Curated Scheme Database</h2>
@@ -231,7 +247,7 @@
     <footer class="bg-white border-t border-slate-200/80 py-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
             <div>
-                <span class="font-bold text-slate-700">Entrepreneur Scheme Copilot</span> — AI-Driven Scheme Matching Platform
+                <span class="font-bold text-slate-700">UdyamAI</span> — AI-Driven Scheme Matching Platform
             </div>
             <div class="flex items-center space-x-6">
                 <a href="/api/docs" target="_blank" class="hover:text-blue-600 font-medium">Developer API Docs</a>

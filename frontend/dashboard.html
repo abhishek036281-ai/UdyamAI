@@ -3,16 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Dashboard - Scheme Copilot</title>
+    <title>User Dashboard - UdyamAI</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/js/app.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: { 50: '#f0f4f8', 100: '#d9e2ec', 800: '#102a43', 900: '#0a1a2e' },
+                        primary: { 50: '#eff6ff', 100: '#dbeafe', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8' },
+                    },
+                    fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
-<body class="bg-gray-50 min-h-screen font-sans text-gray-800">
+<body class="bg-mesh text-slate-800 min-h-screen font-sans text-gray-800">
     <nav class="bg-white shadow-sm border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16 items-center">
                 <a href="/" class="flex items-center space-x-2">
-                    <span class="text-blue-600 text-2xl font-bold">Copilot</span>
+                    <span class="text-blue-600 text-2xl font-bold">UdyamAI</span>
                     <span class="text-gray-700 font-medium">for Entrepreneurs</span>
                 </a>
                 <div id="nav-auth"></div>
@@ -56,10 +72,10 @@
                 <!-- Quick Profile Actions -->
                 <div class="bg-white p-6 rounded-2xl shadow-md border border-gray-100 space-y-3">
                     <h3 class="font-bold text-gray-900 text-base">Profile Management</h3>
-                    <a href="/profile.html" class="block w-full text-center bg-gray-50 hover:bg-gray-100 text-gray-700 py-2.5 rounded-xl text-sm font-semibold border border-gray-200 transition">
+                    <a href="/profile.html" class="block w-full text-center bg-mesh text-slate-800 hover:bg-gray-100 text-gray-700 py-2.5 rounded-xl text-sm font-semibold border border-gray-200 transition">
                         ✎ Edit Entrepreneur Profile
                     </a>
-                    <a href="/business.html" class="block w-full text-center bg-gray-50 hover:bg-gray-100 text-gray-700 py-2.5 rounded-xl text-sm font-semibold border border-gray-200 transition">
+                    <a href="/business.html" class="block w-full text-center bg-mesh text-slate-800 hover:bg-gray-100 text-gray-700 py-2.5 rounded-xl text-sm font-semibold border border-gray-200 transition">
                         ✎ Edit Business Requirements
                     </a>
                 </div>
@@ -130,7 +146,7 @@
 
             if (savedList.length === 0) {
                 container.innerHTML = `
-                    <div class="text-center py-8 bg-gray-50 rounded-xl border border-dashed border-gray-200">
+                    <div class="text-center py-8 bg-mesh text-slate-800 rounded-xl border border-dashed border-gray-200">
                         <p class="text-gray-500 text-sm">You haven't saved any schemes yet.</p>
                         <a href="/recommendations.html" class="inline-block mt-3 text-blue-600 font-semibold text-xs hover:underline">Browse Recommendations →</a>
                     </div>
@@ -141,7 +157,7 @@
             container.innerHTML = savedList.map(item => {
                 const scheme = item.scheme;
                 return `
-                    <div class="p-5 rounded-xl border border-gray-200 bg-gray-50 hover:bg-white hover:shadow-md transition flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                    <div class="p-5 rounded-xl border border-gray-200 bg-mesh text-slate-800 hover:bg-white hover:shadow-md transition flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
                         <div>
                             <span class="text-[10px] uppercase font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded">${scheme.ministry}</span>
                             <h3 class="font-bold text-gray-900 text-base mt-1">

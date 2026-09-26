@@ -2,7 +2,7 @@ from pydantic_settings import BaseSettings
 from functools import lru_cache
 
 class Settings(BaseSettings):
-    PROJECT_NAME: str = "Entrepreneur Scheme Copilot"
+    PROJECT_NAME: str = "UdyamAI"
     VERSION: str = "1.0.0"
     API_V1_STR: str = "/api"
     SECRET_KEY: str = "default-secret-key-change-me"
