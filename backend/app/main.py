@@ -41,7 +41,7 @@ app.include_router(admin.router)
 @app.get("/api/health")
 @app.get("/health")
 def health_check():
-    return {"status": "ok", "message": "Entrepreneur Scheme Copilot API is fully operational"}
+    return {"status": "ok", "message": "UdyamAI API is fully operational"}
 
 # Mount frontend static files
 frontend_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "frontend")
